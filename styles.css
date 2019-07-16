@@ -1,6 +1,9 @@
 /* CSS Stylesheet */
+--outlines = #000;
+
 html, body {
   height: 100%;
+  
 }
 h1,h2,h3,h4,h5,h6,p{
 
@@ -13,7 +16,12 @@ h1,h2,h3,h4,h5,h6,p{
   }
   
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-  .row.content {height: 450px}
+  .row.content {
+      position: relative;
+      border:1px solid green;
+      min-height: 100%;
+      
+    }
   
   /* Set gray background color and 100% height */
   .sidenav {
@@ -22,18 +30,37 @@ h1,h2,h3,h4,h5,h6,p{
     height: 100%;
   }
   
-  .col-sm-8{
-      min-height: 100%;
+  .col-sm-12{
+    height: 100vh;
+    
   }
   .gitForm div{
-      margin: 20px 0;
+      position: relative;
+      margin-top: auto;
 
+  }
+  .formWrapper{
+      margin:0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: grey;
+      border: 1px solid black;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      
+      padding: 20px;
+      width: 75%;
+      max-width: 400px;
+      border-radius: 10px;
   }
   /* Set black background color, white text and some padding */
   footer {
     background-color: #555;
     color: white;
     padding: 15px;
+    position: inherit;
+    bottom:0px;
   }
   
   /* On small screens, set height to 'auto' for sidenav and grid */
