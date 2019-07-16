@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/630c45e9d3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="functions.js"></script>
   <link rel="stylesheet" href="styles.css"/>
 <script>
 </script>
@@ -28,31 +30,26 @@ Date Created - Use jQuery Date Format
     <div class="row content">      
         <div class="col-sm-12 text-left"> 
             <div class="formWrapper">
-                <form action="" class="gitForm">
+                <form class="needs-validation gitForm" onsubmit="return validateForm()" method="POST" novalidate>
                 
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <text class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlText1" value="Michael Burbage" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Example file input</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <label for="exampleFormControlFile1">Profile Picture:</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <text class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea2">Github URL:</label>
+                        <input type="url" class="form-control" id="exampleFormControlText2" value="https://github.com/mburbage" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Example select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+                        <label for="exampleFormControlSelect1">How many public repositories do you have?</label>
+                        <input type="text" class="form-control" id="exampleFormControlText3" maxlength="4" size="4" value="25" required>
+                            
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <input type="submit" class="btn btn-default">
             
                 
                 </form>
