@@ -43,7 +43,7 @@ function buildBioView(data){
   bioHTML += '<div id=\"gitAvatar\"><img class=\"avatarImg\" src=\"' + data.avatar_url + '\" alt="Open GitHub Profile" /></div>';
   bioHTML += '<div id=\"gitName\" class=\"gitValue\">' + data.login + '</div>';
   bioHTML += '<div id=\"gitLink\"><a class=\"avatarLink\" href=\"' + data.html_url + '\" title="Open GitHub Profile" target="_blank"><i class="fas fa-external-link-alt" size="2x"></i></a></div>';
-  bioHTML += '<div id=\"gitRepo\" class=\"gitValueSml\"><strong>Public Repos:</strong> ' + data.public_repos + ' <strong>Date Created:</strong> ' + jsdate(data.created_at) + '</div>';
+  bioHTML += '<div id=\"gitRepo\" class=\"gitValueSml\"><strong>Public Repos:</strong> ' + data.public_repos + ' <br/><strong>Date Created:</strong> ' + jsdate(data.created_at) + '</div>';
   document.getElementById("bioData").innerHTML = bioHTML;
   document.getElementById("bioData").style.display = "block";
 
