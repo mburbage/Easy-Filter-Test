@@ -1,0 +1,204 @@
+/* CSS Stylesheet */
+
+/* Color Theme Swatches in Hex */
+.Intro-Script-1-hex { color: #05C7F2; }
+.Intro-Script-2-hex { color: #22DDF2; }
+.Intro-Script-3-hex { color: #F2CB05; }
+.Intro-Script-4-hex { color: #F2BB16; }
+.Intro-Script-5-hex { color: #F2F2F2; }
+
+
+
+html, body {
+  height: 100%;
+  background-color: #ffffff;
+  
+}
+h1,h2,h3,h4,h5,h6,p,label{
+  font-family: 'Nunito', sans-serif;
+}
+a{
+  font-family: 'Nunito', sans-serif;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  margin: 25px 10px;
+  text-align: left;
+}
+input[type=text]:focus { 
+  outline: none !important;
+  border-color: #F2CB05;
+  box-shadow: 0 0 10px #c4bb92;
+}
+input[type=url]:focus { 
+  outline: none !important;
+  border-color: #F2CB05;
+  box-shadow: 0 0 10px #c4bb92;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .navbar-brand>img{
+
+  }
+  .navbar-inverse{
+    background-color: #F2CB05;
+    border: #F2CB05;
+  }
+  .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+    background-color: #F2BB16;
+  }
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: #F2BB16;
+  }
+  .navbar-inverse .navbar-nav>li>a{
+    color: #ffffff;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+      position: relative;
+      min-height: 100%;
+      
+    }
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  .col-sm-12{
+    height: 100vh;
+    
+  }
+  .gitForm div{
+      position: relative;
+      margin-top: auto;
+
+  }
+  .wrapper{
+    position: relative;
+      top: 40%;
+      left: 0;
+      -ms-transform: translate(0, 40%);
+      transform: translate(0, 40%);
+  }
+  .wrapper-card{
+      font-family: 'Nunito', sans-serif;
+      margin: auto;
+      position: relative;
+      
+      background-color: #f2f2f2;
+      border: 1px solid #F2CB05;
+            
+      padding: 15px 15px;
+      
+      
+      max-width: 600px;
+      min-height: 82px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 8px #bbbbbb;
+  }
+  .bioData{
+    position: relative;
+  }
+  .avatarImg{
+    position: relative;
+    float: left;
+    width: 50px;
+    margin-right: 15px;
+    
+   
+    border-radius: 50%;
+    
+  }
+  .gitValue{
+    font-size: 16px;
+    font-weight: bold;
+
+
+  }
+  .wrapper a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    display:block;
+    padding: 15px;  
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    position: inherit;
+    bottom:0px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+  @media screen and (max-width: 450px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;}
+    .wrapper{
+      position: relative;
+      top: 0;
+      left: 0;
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0); 
+      background-color: #ffffff;
+      display: block;
+    }
+    .wrapper-card{
+      margin:0;
+      position: relative;
+      
+      border: 0;
+      background-color: #ffffff;
+           
+      padding: 15px 15px;
+      width: 100%;
+      max-width: 450px;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .col-md-4{
+      margin: 0;
+      padding: 0;
+      
+    }
+    .navbar{
+      margin-bottom: 0;
+    }
+    .navbar-inverse .navbar-toggle {
+      border-color: #b88e12;
+      background-color: #F2BB16;
+  }
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #b88e12;
+}
+.navbar-nav {
+  margin: 0px -15px;
+}
+    .wrapper label{
+      font-size: 20px;
+      font-weight: bold;
+  
+  
+    }
+  }

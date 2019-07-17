@@ -5,10 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Poppins:100,400&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/630c45e9d3.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery-dateformat.min.js"></script>
     <script src="js/functions.js"></script>
     <link rel="stylesheet" href="css/styles.css"/>
 <script>
@@ -32,51 +34,48 @@ Date Created - Use jQuery Date Format
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#"><img src="images/GitHub_Logo_White.png" width="100px"/></a>
+        <a class="navbar-brand" href="#"><img src="images/GitHub_Logo_White.png" width="50px"/></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="bio.html">View Bio</a></li>
+            <li class="active"><a href="bio.html">View Bio</a></li>
             <li><a href="avatar.html">Add Avatar</a></li>
             
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li></li>
         </ul>
         </div>
     </div>
     </nav>
-    
+   
 <div class="container-fluid">    
-    <div class="row content">      
-        <div class="col-sm-12 text-left"> 
-            <div class="formWrapper">
-                <form class="needs-validation gitForm" onsubmit="return validateForm()" method="POST" novalidate>
+    <div class="row content">  
+            <div class="col-md-4 text-left">
+            </div>    
+        <div class="col-md-4 text-center">
+            <div class="wrapper">
+            <h1>Better GitHub Profile</h1>
+            <p>Description: Please enter a GitHub profile name to return the users profile data. View the users current avatar, public repositories, and date the user was created. Thank you and enjoy my web app. Easy Filter looks like a fun place to work.</p>
+            <div id="bio" class="wrapper-card">
+                    
+                    <form id="bioForm" class="needs-validation" onsubmit="return getGithubBio()" method="POST">
                 
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlText1" value="Michael Burbage" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Profile Picture:</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea2">Github URL:</label>
-                        <input type="url" class="form-control" id="exampleFormControlText2" value="https://github.com/mburbage" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">How many public repositories do you have?</label>
-                        <input type="text" class="form-control" id="exampleFormControlText3" maxlength="4" size="4" value="25" required>
-                            
+                        <label for="exampleFormControlTextarea1">Search GitHub Users:</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Github Profile Name" required>
                     </div>
                     <input type="submit" class="btn btn-default">
             
                 
                 </form>
+                <div id="bioData" class="cards" style="display: none;">                    
+                    </div>
             </div>
-        </div>      
+        </div> 
+        </div> 
+        <div class="col-md-4 text-left">
+            </div>     
     </div>
 </div>
   
